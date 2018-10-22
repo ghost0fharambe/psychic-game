@@ -17,6 +17,10 @@ var lossesText = document.getElementById("losses-text");
 var guessLimitText = document.getElementById("guess-limit");
 var guessesText = document.getElementById("your-guesses");
 
+winsText.textContent = "wins: " + wins;
+lossesText.textContent = "losses: " + losses;
+guessLimitText.textContent = "Guesses Left: " + guessLimit;
+
 guessLimitText.textContent = "Guesses Left: " + guessLimit;
 // This function is run whenever the user presses a key.
 document.onkeyup = function (event) {
